@@ -1,0 +1,28 @@
+root = true
+
+[*]
+charset = utf-8
+curly_bracket_next_line = false
+end_of_line = lf
+indent_size = 2
+indent_style = space
+insert_final_newline = true
+max_line_length = 80
+quote_type = double
+spaces_around_operators = true
+tab_width = 4
+trim_trailing_whitespace = true
+
+[*.sh]
+indent_size = 4
+max_line_length = 120
+
+[*.{c,h}]
+indent_size = 8
+
+[Makefile]
+indent_style = tab
+max_line_length = 120
+
+[*.{sln,vcxproj,vcproj,xproj,props,vcxitems}]
+end_of_line = crlf
