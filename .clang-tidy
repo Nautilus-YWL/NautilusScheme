@@ -2,10 +2,19 @@
 
 Checks: -*,
         boost-*,
+        bugprone-*,
+        -bugprone-argument-comment,
+        -bugprone-easily-swappable-parameters,
+        -bugprone-exception-escape,
+        -bugprone-parent-virtual-call,
+        -bugprone-swapped-arguments,
+        -bugprone-unsafe-functions,
         cert-*,
-        -cert-env33-c,
         -cert-msc50-cpp,
         -cert-err58-cpp,
+        clang-analyzer-core.DynamicTypePropagation,
+        clang-analyzer-cplusplus.InnerPointer,
+        clang-analyzer-optin.performance.*,
         google-*,
         -google-objc-*,
         -google-readability-avoid-underscore-in-googletest-name,
@@ -22,6 +31,7 @@ Checks: -*,
         performance-*,
         readability-*,
         -readability-convert-member-functions-to-static,
+        -readability-identifier-length,
         -readability-inconsistent-declaration-parameter-name,
         -readability-magic-numbers,
         -readability-suspicious-call-argument,
@@ -33,6 +43,8 @@ AnalyzeTemporaryDtors: false
 FormatStyle: none
 
 CheckOptions:
+  - key: bugprone-suspicious-include.HeaderFileExtensions
+    value: ';h;hh;hpp;hxx;tcc;inc;def'
   - key: google-build-namespaces.HeaderFileExtensions
     value: 'h,hh,hpp,hxx,'
   - key: google-global-names-in-headers.HeaderFileExtensions
@@ -40,7 +52,7 @@ CheckOptions:
   - key: google-readability-namespace-comments.SpacesBeforeComments
     value: '2'
   - key: google-readability-namespace-comments.ShortNamespaceLines
-    value: '10'
+    value: '8'
   - key: misc-non-private-member-variables-in-classes.IgnoreClassesWithAllMemberVariablesBeingPublic
     value: 'true'
   - key: misc-uniqueptr-reset-release.IncludeStyle
