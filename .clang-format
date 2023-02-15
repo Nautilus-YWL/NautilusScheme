@@ -1,1 +1,31 @@
+---
 BasedOnStyle: LLVM
+AccessModifierOffset: -1
+AlignArrayOfStructures: Right
+AlwaysBreakTemplateDeclarations: Yes
+BreakConstructorInitializers: BeforeColon
+BreakConstructorInitializersBeforeComma: true
+BreakInheritanceList: BeforeComma
+BreakBeforeInheritanceComma: true
+EmptyLineBeforeAccessModifier: Always
+IncludeBlocks: Regroup
+IndentCaseLabels: true
+InsertBraces: true
+InsertNewlineAtEOF: true
+IntegerLiteralSeparator:
+  Binary: 4
+  Decimal: 3
+  Hex: 2
+KeepEmptyLinesAtTheStartOfBlocks: false
+LineEnding: LF
+PointerAlignment: Left
+QualifierAlignment: Custom
+QualifierOrder: ['inline', 'static', 'constexpr', 'type', 'const', 'volatile']
+RequiresClausePosition: OwnLine
+RequiresExpressionIndentation: OuterScope
+ShortNamespaceLines: 8
+SpacesBeforeTrailingComments: 2
+UseCRLF: false
+UseTab: Never
+DisableFormat: true
+...
