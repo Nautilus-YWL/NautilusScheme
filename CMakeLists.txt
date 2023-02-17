@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.11 FATAL_ERROR)
 
-project(ywl-scheme
+project(nautilus
   LANGUAGES CXX
   VERSION 0.1)
 

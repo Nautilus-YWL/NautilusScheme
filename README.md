@@ -1,19 +1,4 @@
-# YWL Scheme
-
-## 下载及编译
-
- - 下载
-``` shell
-git clone git@github.com:Nautilus-YWL/gittemplate.git ywl-gittemplate
-git clone git@github.com:Nautilus-YWL/YWLScheme.git \
-    --template=ywl-gittemplate
-```
-
- - 编译
-
-``` shell
-cmake -S. -Bcmake-build-debug -GNinja
-```
+# Nautilus Scheme
 
 ## 协议
 

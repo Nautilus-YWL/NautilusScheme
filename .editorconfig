@@ -26,3 +26,6 @@ max_line_length = 120
 
 [*.{sln,vcxproj,vcproj,xproj,props,vcxitems}]
 end_of_line = crlf
+
+[*.md]
+trim_trailing_whitespace = false
